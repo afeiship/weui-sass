@@ -1,0 +1,14 @@
+/**-init Start**/
+.weui-vcode {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  .weui-cell-ft {
+    img {
+      margin-left: 5px;
+      height: $weui-cell-height;
+      vertical-align: middle;
+    }
+  }
+}
+/**-init  End**/

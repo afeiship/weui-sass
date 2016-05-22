@@ -1,0 +1,70 @@
+/**weui-cell-global Start**/
+.weui-cell {
+  // onepx
+  position: relative;
+  &:before {
+    .setTopLine($weui-cell-border-color);
+    left: $weui-cell-gap-h;
+  }
+  &:first-child {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.weui-cells {
+  margin-top: $weui-cells-margin-top;
+  background-color: $weui-cell-bg;
+  line-height: $weui-cell-line-height;
+  font-size: $weui-cell-font-size; //cell中间有效高度23px，跟客户端默认图标尺寸一致
+
+  overflow: hidden; //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
+
+  // onepx
+  position: relative;
+  &:before {
+    .setTopLine($weui-cell-border-color);
+  }
+  &:after {
+    .setBottomLine($weui-cell-border-color);
+  }
+}
+
+.weui-cells-title {
+  margin-top: .77em; // 15px - 行高
+  margin-bottom: .3em; // 8px - 行高
+  padding-left: $weui-cell-gap-h;
+  padding-right: $weui-cell-gap-h;
+  color: $global-text-color;
+  font-size: $weui-cell-tips-font-size;
+
+  & + .weui-cells {
+    margin-top: 0;
+  }
+}
+
+.weui-cells-tips {
+  margin-top: .3em; // 8px - 行高
+  color: $global-text-color;
+  padding-left: $weui-cell-gap-h;
+  padding-right: $weui-cell-gap-h;
+  font-size: $weui-cell-tips-font-size;
+}
+
+.weui-cell {
+  padding: $weui-cell-gap-v $weui-cell-gap-h;
+  position: relative; //这个是为了兼容cells容器onepx方案被before挡住而做的
+  display: flex;
+  align-items: center;
+}
+
+.weui-cell-ft {
+  text-align: right;
+  color: $global-text-color;
+}
+
+.weui-cell-primary {
+  flex: 1;
+}
+/**weui-cell-global  End**/

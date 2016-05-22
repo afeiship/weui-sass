@@ -1,0 +1,103 @@
+/**set-arrow Start**/
+
+@mixin set-arrow-width($border-width) {
+  border-width: $border-width;
+}
+
+@mixin set-arrow-color($border-color) {
+  &.arrow-t {
+    border-bottom-color: $border-color;
+  }
+  &.arrow-r {
+    border-left-color: $border-color;
+  }
+  &.arrow-b {
+    border-top-color: $border-color;
+  }
+  &.arrow-l {
+    border-right-color: $border-color;
+  }
+}
+
+@mixin arrow($border-width, $border-color) {
+  @include set-arrow-width($border-width);
+  @include set-arrow-color($border-color);
+}
+
+
+@mixin arrow-t($color) {
+  border-top-width: 0;
+  border-bottom-color: $color;
+  border-bottom-style: solid;
+}
+
+@mixin arrow-r($color) {
+  border-right-width: 0;
+  border-left-color: $color;
+  border-left-style: solid;
+}
+
+@mixin arrow-b($color) {
+  border-bottom-width: 0;
+  border-top-color: $color;
+  border-top-style: solid;
+}
+
+@mixin arrow-l($color) {
+  border-left-width: 0;
+  border-right-color: $color;
+  border-right-style: solid;
+}
+
+
+@mixin set-arrow($direction, $border-width, $border-color) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: $border-width dashed transparent;
+  @if $direction == top {
+    @include arrow-t($border-color);
+  } @else if $direction == right {
+    @include arrow-r($border-color);
+  } @else if $direction == bottom {
+    @include arrow-b($border-color);
+  } @else if $direction == left {
+    @include arrow-l($border-color);
+  }
+}
+
+
+// css3 arrow
+@mixin set-arrow-width-wrap($border-width) {
+  border-width: $border-width $border-width 0 0;
+}
+
+@mixin set-arrow-size-wrap($arrow-size) {
+  height: $arrow-size;
+  width: $arrow-size;
+}
+
+@mixin set-arrow-wrap($direction, $arrow-size, $border-color, $border-width) {
+  display: inline-block;
+  @include set-arrow-size-wrap($arrow-size);
+  @include set-arrow-width-wrap($border-width);
+  border-color: $border-color;
+  border-style: solid;
+  @if $direction == top {
+    transform: translate(0, 0) rotate(-45deg);
+  } @else if $direction == right {
+    transform: rotate(45deg);
+    position: relative;
+    top: -2px;
+  } @else if $direction == down {
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+  } @else if $direction == bottom {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -2px;
+  }
+}
+
+/**set-arrow  End**/

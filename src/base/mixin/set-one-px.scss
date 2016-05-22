@@ -1,0 +1,54 @@
+/**set-one-px Start**/
+@mixin set-top-line($color: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid $color;
+  color: $color;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+@mixin set-bottom-line($color: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid $color;
+  color: $color;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+@mixin set-left-line($color: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid $color;
+  color: $color;
+  transform-origin: 0 0;
+  transform: scaleX(0.5);
+}
+
+@mixin set-right-line($color: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid $color;
+  color: $color;
+  transform-origin: 100% 0;
+  transform: scaleX(0.5);
+}
+
+/**set-one-px  End**/

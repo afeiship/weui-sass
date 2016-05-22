@@ -1,0 +1,45 @@
+/**weui-msg Start**/
+.weui-msg {
+  padding-top: $weui-msg-padding-top;
+  text-align: center;
+
+  .weui-icon-area {
+    margin-bottom: $weui-msg-icon-gap;
+  }
+
+  .weui-text-area {
+    margin-bottom: $weui-msg-text-gap;
+    padding:0 20px;
+  }
+  .weui-msg-title {
+    margin-bottom: $weui-msg-title-gap;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .weui-msg-desc {
+    font-size: 14px;
+    color: $global-text-color;
+  }
+
+  .weui-opr-area {
+    margin-bottom: $weui-msg-opr-gap;
+  }
+
+  .weui-extra-area {
+    margin-bottom: $weui-msg-extra-area-gap;
+    font-size: 14px;
+    color: $global-text-color;
+    a{color: $global-link-color;}
+  }
+}
+
+@media screen and (min-height: $weui-msg-extra-area-of-min-height) {
+  .weui-extra-area {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+/**weui-msg  End**/

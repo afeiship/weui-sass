@@ -1,0 +1,22 @@
+/**text Start**/
+@mixin ellipsis($width:auto) {
+  width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+@mixin ellipsisLn($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+@mixin text-wrap() {
+  word-wrap:break-word;
+  word-break:break-all;
+}
+
+/**text  End**/

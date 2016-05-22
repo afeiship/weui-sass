@@ -1,0 +1,96 @@
+/**weui--dialog Start**/
+$weui-dialog-background-color: #FAFAFC;
+$weui-dialog-line-color: #D5D5D6;
+$weui-dialog-link-color: #3CC51F;
+$weui-dialog-link-active-bg: #EEEEEE;
+
+.weui_-dialog {
+  position: fixed;
+  z-index: 13;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: $weui-dialog-background-color;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+  .weui_-dialog_confirm & {
+    .weui_-dialog_hd {
+      padding: 1.2em 20px .5em;
+    }
+    .weui_-dialog_bd {
+      text-align: left;
+    }
+  }
+}
+
+.weui_-dialog_hd {
+  padding: 1.2em 0 .5em;
+}
+
+.weui_-dialog_title {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.weui_-dialog_bd {
+  padding: 0 20px;
+  font-size: 15px;
+  color: $global-text-color;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.weui_-dialog_ft {
+  position: relative;
+  line-height: 42px;
+  margin-top: 20px;
+  font-size: 17px;
+  display: flex;
+  a {
+    display: block;
+    flex: 1;
+    color: $weui-dialog-link-color;
+    text-decoration: none;
+    .setTap-color;
+    &:active {
+      background-color: $weui-dialog-link-active-bg;
+    }
+  }
+  &:after {
+    content: " ";
+    .setTopLine($weui-dialog-line-color);
+  }
+  .weui_-dialog_confirm & {
+    a {
+      position: relative;
+      &:after {
+        content: " ";
+        .setLeftLine($weui-dialog-line-color);
+      }
+      &:first-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.weui_btn_-dialog {
+  &.default {
+    color: #353535;
+  }
+  &.primary {
+    color: #0BB20C;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .weui_-dialog {
+    width: 35%;
+  }
+}
+/**weui--dialog  End**/

@@ -1,0 +1,12 @@
+/**mobile Start**/
+// tapcolor
+@mixin set-tap-color($color) {
+  -webkit-tap-highlight-color: $color;
+}
+
+//user action
+@mixin no-select {
+  user-select: none;
+}
+
+/**mobile  End**/

@@ -1,0 +1,47 @@
+/**weui-navbar Start**/
+.weui-navbar {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: #fafafa;
+
+  &:after {
+    .setBottomLine(@globalBorderColor);
+  }
+
+  & + .weui-tab-bd {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
+.weui-navbar-item {
+  position: relative;
+  display: block;
+  flex: 1;
+  padding: 13px 0;
+  text-align: center;
+  font-size: 15px;
+  -webkit-tap-highlight-color: transparent;
+
+  &:active {
+    background-color: #ededed;
+  }
+
+  &.weui-bar-item-on {
+    background-color: #eaeaea;
+  }
+
+  &:after {
+    .setRightLine(#cccccc);
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
+/**weui-navbar  End**/

@@ -1,0 +1,22 @@
+/**weui-tab Start**/
+.weui-tab {
+  position: relative;
+  height: 100%;
+}
+
+.weui-tab-bd {
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 55px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.weui-tab-bd-item {
+  display: none;
+}
+
+.weui-tab-bd-item-active {
+  display: block;
+}
+/**weui-tab  End**/

@@ -1,0 +1,71 @@
+/**_init Start**/
+.weui-label{
+  display:block;
+  width:$weui-cell-label-width;
+  @include text-wrap();
+}
+.weui-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  height: unit($weui-cell-line-height, em);
+  line-height: $weui-cell-line-height;
+
+  // hides the spin-button
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.weui-textarea {
+  display: block;
+  border: 0;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0;
+}
+
+.weui-textarea-counter{
+  color: $global-desc-color;
+  text-align: right;
+  .weui-cell-warn &{
+    color: $global-warn-color;
+  }
+}
+
+.weui-toptips {
+  display:none;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  width: 100%;
+  top: 0;
+  line-height: 2.3;
+  font-size:14px;
+  text-align: center;
+  color: #FFF;
+  z-index: 2;
+  &.weui-warn {
+    background-color: $global-warn-color;
+  }
+}
+.weui-cells-form {
+  .weui-cell-warn{
+    color:$global-warn-color;
+    .weui-icon-warn{display:inline-block;}
+  }
+  .weui-cell-ft{font-size:0;}
+  .weui-icon-warn{
+    display:none;
+  }
+  input, textarea, label[for]{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+/**_init  End**/

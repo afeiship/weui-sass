@@ -1,0 +1,36 @@
+/**weui-btn-global Start**/
+.weui-btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size:$weui-btn-font-size;
+  text-align: center;
+  text-decoration: none;
+  color: $weui-btn-font-color;
+  line-height: unit($weui-btn-height/$weui-btn-font-size);
+  border-radius: $weui-btn-border-radius;
+  .setTapColor();
+  overflow: hidden;
+  &:after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    transform: scale(.5);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: $weui-btn-border-radius*2;
+  }
+
+  &.weui-btn-inline {
+    display: inline-block;
+  }
+}
+/**weui-btn-global  End**/

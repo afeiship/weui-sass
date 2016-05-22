@@ -1,0 +1,52 @@
+/**weui-button Start**/
+.weui-btn {
+  &.weui-btn-mini {
+    line-height: $weui-btn-mini-height;
+    font-size: $weui-btn-mini-font-size;
+    padding: 0 .75em;
+    display: inline-block;
+  }
+}
+
+button, input {
+  &.weui-btn {
+    width: 100%;
+    border-width: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &.weui-btn-inline,&.weui-btn-mini {
+    width: auto;
+  }
+}
+
+/*gap between btn*/
+.weui-btn + .weui-btn {
+  margin-top: $weui-btn-default-gap;
+}
+
+.weui-btn.weui-btn-inline + .weui-btn.weui-btn-inline {
+  margin-top: auto;
+  margin-left: $weui-btn-default-gap;
+}
+
+.weui-btn-area {
+  margin: $weui-cells-margin-top $weui-btn-default-gap .3em;
+  &.weui-btn-area-inline {
+    display: flex;
+    .weui-btn {
+      margin-top: auto;
+      margin-right: $weui-btn-default-gap;
+      width: 100%;
+      flex: 1;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/**weui-button  End**/

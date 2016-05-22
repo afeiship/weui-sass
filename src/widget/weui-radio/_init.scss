@@ -1,0 +1,28 @@
+/**-init Start**/
+// method2 accessbility
+.weui-cells-radio{
+  .weui-cell-ft {
+    padding-left: $weui-cell-inner-gap-h;
+  }
+  .weui-cell {
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
+}
+.weui-check {
+  // radio
+  .weui-cells-radio & {
+    &:checked {
+      & + .weui-icon-checked {
+        &:before {
+          display: block;
+          content: '\EA08';
+          color: #09BB07;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+/**-init  End**/

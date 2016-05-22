@@ -1,0 +1,36 @@
+/**weui-checkbox Start**/
+
+.weui-cells-checkbox {
+  .weui-cell-hd {
+    padding-right: $weui-cell-inner-gap-h;
+  }
+  .weui-cell {
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
+  .weui-icon-checked {
+    &:before {
+      content: '\EA01';
+      color: #C9C9C9;
+      font-size: 23px;
+      display: block;
+    }
+  }
+}
+
+// method2 accessbility
+.weui-check {
+  // checkbox
+  .weui-cells-checkbox & {
+    &:checked {
+      & + .weui-icon-checked {
+        &:before {
+          content: '\EA06';
+          color: #09BB07;
+        }
+      }
+    }
+  }
+}
+/**weui-checkbox  End**/

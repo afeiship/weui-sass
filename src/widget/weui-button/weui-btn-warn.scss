@@ -1,0 +1,13 @@
+/**weui-btn-warn Start**/
+.weui-btn-warn {
+  background-color: $weui-btn-warn-bg;
+  &:not(.weui-btn-disabled):visited {
+    color: $weui-btn-font-color;
+  }
+  &:not(.weui-btn-disabled):active {
+    color: $weui-btn-active-font-color;
+    background-color: $weui-btn-warn-active-bg;
+  }
+}
+
+/**weui-btn-warn  End**/

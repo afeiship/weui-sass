@@ -1,0 +1,34 @@
+/**global Start**/
+// font family
+$sans-font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+$serif-font:Georgia, "Times New Roman",Times,serif;
+$wp-font:"Microsoft YaHei",sans-serif;
+$biz-font:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+$global-font:$sans-font;
+$global-fontSize:14px;
+
+// font color
+$global-link-color: #61749B;
+$global-desc-color: #B2B2B2;
+$global-warn-color: #E64340;
+$global-nickname-color: #576B95;
+$global-text-color: #888;
+$global-title-color: #000;
+
+//border
+$global-border-color: #BCBAB6;
+
+//arrow
+$global-arrow-color: #C7C7CC;
+
+//component
+$item-active-color: #E4E4E4;
+
+//page
+$page-default-background-color:#EfEff4;
+
+// gap
+$gap5:5px;
+$gap10:10px;
+$gap15:15px;
+/**global  End**/

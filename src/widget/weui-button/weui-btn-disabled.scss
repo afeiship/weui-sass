@@ -1,0 +1,9 @@
+/**weui-btn-disabled Start**/
+.weui-btn-disabled {
+  color: $weui-btn-disabled-fontColor;
+  &.weui-btn-default {
+    color: $weui-btn-default-disabled-font-color;
+  }
+}
+
+/**weui-btn-disabled  End**/
