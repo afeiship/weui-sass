@@ -7,6 +7,10 @@
   ],
   "license": "MIT",
   "keywords": [
+    "wechat",
+    "weui",
+    "sass",
+    "scss",
     "next"
   ],
   "homepage": "https://github.com/afeiship/weui-sass",
