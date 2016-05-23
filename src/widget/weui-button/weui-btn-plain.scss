@@ -2,10 +2,7 @@
 .weui-btn-plain-primary {
   color: $weui-btn-primary-bg;
   border: 1px solid $weui-btn-primary-bg;
-  button&, input& {
-    border-width: 1px;
-    background-color: transparent;
-  }
+
   &:active {
     border-color: $weui-btn-primary-active-bg;
   }
@@ -14,15 +11,24 @@
   }
 }
 
+button.weui-btn-plain-primary,
+input.weui-btn-plain-primary {
+  border-width: 1px;
+  background-color: transparent;
+}
+
 .weui-btn-plain-default {
   color: #5A5A5A;
   border: 1px solid #5A5A5A;
-  button&, input& {
-    border-width: 1px;
-    background-color: transparent;
-  }
+
   &:after {
     border-width: 0;
   }
+}
+
+button.weui-btn-plain-default,
+input.weui-btn-plain-default {
+  border-width: 1px;
+  background-color: transparent;
 }
 /**weui-btn-plain  End**/

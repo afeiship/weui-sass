@@ -8,7 +8,7 @@
   background-color: #fafafa;
 
   &:after {
-    .setBottomLine(@globalBorderColor);
+    @include set-bottom-line($global-border-color)
   }
 
   & + .weui-tab-bd {
@@ -35,7 +35,7 @@
   }
 
   &:after {
-    .setRightLine(#cccccc);
+    @include set-right-line(#ccc);
   }
 
   &:last-child {

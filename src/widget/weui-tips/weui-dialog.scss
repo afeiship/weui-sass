@@ -4,7 +4,7 @@ $weui-dialog-line-color: #D5D5D6;
 $weui-dialog-link-color: #3CC51F;
 $weui-dialog-link-active-bg: #EEEEEE;
 
-.weui_-dialog {
+.weui-dialog {
   position: fixed;
   z-index: 13;
   width: 85%;
@@ -16,26 +16,26 @@ $weui-dialog-link-active-bg: #EEEEEE;
   text-align: center;
   border-radius: 3px;
   overflow: hidden;
-  .weui_-dialog_confirm & {
-    .weui_-dialog_hd {
+  .weui-dialog-confirm & {
+    .weui-dialog-hd {
       padding: 1.2em 20px .5em;
     }
-    .weui_-dialog_bd {
+    .weui-dialog-bd {
       text-align: left;
     }
   }
 }
 
-.weui_-dialog_hd {
+.weui-dialog-hd {
   padding: 1.2em 0 .5em;
 }
 
-.weui_-dialog_title {
+.weui-dialog-title {
   font-weight: 400;
   font-size: 17px;
 }
 
-.weui_-dialog_bd {
+.weui-dialog-bd {
   padding: 0 20px;
   font-size: 15px;
   color: $global-text-color;
@@ -43,7 +43,7 @@ $weui-dialog-link-active-bg: #EEEEEE;
   word-break: break-all;
 }
 
-.weui_-dialog_ft {
+.weui-dialog-ft {
   position: relative;
   line-height: 42px;
   margin-top: 20px;
@@ -54,21 +54,21 @@ $weui-dialog-link-active-bg: #EEEEEE;
     flex: 1;
     color: $weui-dialog-link-color;
     text-decoration: none;
-    .setTap-color;
+    @include set-tap-color();
     &:active {
       background-color: $weui-dialog-link-active-bg;
     }
   }
   &:after {
     content: " ";
-    .setTopLine($weui-dialog-line-color);
+    @include set-top-line($weui-dialog-line-color);
   }
-  .weui_-dialog_confirm & {
+  .weui-dialog-confirm & {
     a {
       position: relative;
       &:after {
         content: " ";
-        .setLeftLine($weui-dialog-line-color);
+        @include set-left-line($weui-dialog-line-color);
       }
       &:first-child {
         &:after {
@@ -79,7 +79,7 @@ $weui-dialog-link-active-bg: #EEEEEE;
   }
 }
 
-.weui_btn_-dialog {
+.weui-btn-dialog {
   &.default {
     color: #353535;
   }
@@ -89,7 +89,7 @@ $weui-dialog-link-active-bg: #EEEEEE;
 }
 
 @media screen and (min-width: 1024px) {
-  .weui_-dialog {
+  .weui-dialog {
     width: 35%;
   }
 }

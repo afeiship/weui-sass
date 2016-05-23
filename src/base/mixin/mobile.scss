@@ -1,6 +1,6 @@
 /**mobile Start**/
 // tapcolor
-@mixin set-tap-color($color) {
+@mixin set-tap-color($color:rgba(0,0,0,0.3)) {
   -webkit-tap-highlight-color: $color;
 }
 

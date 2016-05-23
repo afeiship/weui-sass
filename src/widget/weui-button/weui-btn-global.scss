@@ -11,9 +11,9 @@
   text-align: center;
   text-decoration: none;
   color: $weui-btn-font-color;
-  line-height: unit($weui-btn-height/$weui-btn-font-size);
+  line-height: $weui-btn-height/$weui-btn-font-size;
   border-radius: $weui-btn-border-radius;
-  .setTapColor();
+  @include set-tap-color();
   overflow: hidden;
   &:after {
     content: " ";

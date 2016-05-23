@@ -7,10 +7,10 @@
   background-color: #EFEFF4;
   z-index: 2;
   &:before {
-    .setTopLine();
+    @include set-top-line();
   }
   &:after {
-    .setBottomLine();
+    @include set-bottom-line();
   }
   &.weui-search-focusing{
     .weui-search-cancel{
@@ -49,12 +49,13 @@
   box-sizing: border-box;
   z-index: 1;
   .weui-search-input {
+    $height:20/14;
     padding: 4px 0;
     width: 100%;
-    height: 20/14em;
+    height: #{$height}em;
     border: 0;
     font-size: 14px;
-    line-height: 20/14em;
+    line-height: #{$height}em;
     box-sizing: content-box;
     background: transparent;
     &:focus {

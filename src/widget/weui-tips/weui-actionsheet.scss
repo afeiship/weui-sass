@@ -1,6 +1,6 @@
 /**weui-actionsheet Start**/
 $bg-color:#ECECEC;
-.weui_actionsheet {
+.weui-actionsheet {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -12,20 +12,20 @@ $bg-color:#ECECEC;
   //slide up animation
   transition: transform .3s;
 }
-.weui_actionsheet_menu{
+.weui-actionsheet-menu{
   background-color: #FFFFFF;
 }
-.weui_actionsheet_action {
+.weui-actionsheet-action {
   margin-top: 6px;
   background-color: #FFFFFF;
 }
-.weui_actionsheet_cell {
+.weui-actionsheet-cell {
   position: relative;
   padding: 10px 0;
   text-align: center;
   font-size: 18px;
   &:before {
-    .setTopLine($weui-cell-border-color);
+    @include set-top-line($weui-cell-border-color);
   }
   &:active{
     background-color: $bg-color;
@@ -38,7 +38,7 @@ $bg-color:#ECECEC;
 }
 
 //actionSheet aniamtion
-.weui_actionsheet_toggle{
+.weui-actionsheet-toggle{
   transform: translate(0, 0);
 }
 /**weui-actionsheet  End**/
