@@ -1,7 +1,7 @@
 #weui-sass
 Sass version for weui.
 
-##demo:
+## demo:
 + https://raw.githubusercontent.com/afeiship/weui-sass/master/test/demo-weui.html
 
 ## resources:
