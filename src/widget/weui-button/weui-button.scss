@@ -10,16 +10,16 @@ button, input {
       outline: 0;
     }
   }
-  &.weui-btn-inline, &.weui-btn-mini {
+  &.weui-btn_inline,&.weui-btn_mini {
     width: auto;
   }
-  &.weui-btn-plain-primary, &.weui-btn-plain-default {
+  &.weui-btn_plain-primary,&.weui-btn_plain-default{
     border-width: 1px;
     background-color: transparent;
   }
 }
 
-.weui-btn-mini {
+.weui-btn_mini {
   display: inline-block;
   padding: 0 1.32em;
   line-height: $weui-btn-mini-height;
@@ -31,7 +31,7 @@ button, input {
   margin-top: $weui-btn-default-gap;
 }
 
-.weui-btn.weui-btn-inline + .weui-btn.weui-btn-inline {
+.weui-btn.weui-btn_inline + .weui-btn.weui-btn_inline {
   margin-top: auto;
   margin-left: $weui-btn-default-gap;
 }
@@ -40,7 +40,7 @@ button, input {
   margin: $weui-cells-margin-top $weui-btn-default-gap .3em;
 }
 
-.weui-btn-area-inline {
+.weui-btn-area_inline {
   display: flex;
   .weui-btn {
     margin-top: auto;
