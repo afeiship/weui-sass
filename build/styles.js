@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
   'use strict';
 
@@ -8,15 +8,16 @@
   var $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
-  
 
-  gulp.task('styles',function() {
+
+  gulp.task('styles', function () {
     return gulp.src('src/weui.scss')
+      .pipe($.sassGlob())
       .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
       .pipe(gulp.dest('dist'))
       .pipe($.sass({outputStyle: 'compressed'}).on('error', $.sass.logError))
       .pipe($.rename({
-        extname:'.min.css'
+        extname: '.min.css'
       }))
       .pipe(gulp.dest('dist'));
   });

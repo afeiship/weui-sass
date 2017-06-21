@@ -7,16 +7,17 @@
   word-wrap: normal;
 }
 
-@mixin ellipsisLn($line) {
+@mixin ellipsis-ln($line) {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line;
 }
-@mixin text-wrap() {
-  word-wrap:break-word;
-  word-break:break-all;
+
+@mixin text-wrap {
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 /**text  End**/

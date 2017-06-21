@@ -28,7 +28,7 @@ $gray-color: #999999;
     color: $gray-color;
     font-size: 13px;
     line-height: 1.2;
-    @include ellipsisLn(2);
+    @include ellipsis-ln(2);
   }
 
   &.weui-media-text {
