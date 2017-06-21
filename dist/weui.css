@@ -296,7 +296,6 @@ button.weui-btn-inline, button.weui-btn-mini, input.weui-btn-inline, input.weui-
 }
 
 .weui-btn-area.weui-btn-area-inline {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -304,8 +303,7 @@ button.weui-btn-inline, button.weui-btn-mini, input.weui-btn-inline, input.weui-
   margin-top: auto;
   margin-right: 15px;
   width: 100%;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
 }
 
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child {
@@ -694,9 +692,7 @@ input.weui-btn-plain-default {
 }
 
 .weui_switch {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   position: relative;
   width: 52px;
   height: 32px;
@@ -1032,10 +1028,8 @@ input.weui-btn-plain-default {
 }
 
 .weui-media-box.weui-media-appmsg {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .weui-media-box.weui-media-appmsg .weui-media-hd {
@@ -1053,8 +1047,7 @@ input.weui-btn-plain-default {
 }
 
 .weui-media-box.weui-media-appmsg .weui-media-bd {
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   min-width: 0;
 }
 
@@ -1110,6 +1103,7 @@ a.weui-media-box:active {
 
 .weui-article * {
   max-width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
 }
@@ -1281,17 +1275,14 @@ a.weui-media-box:active {
 /**_init  End**/
 /**-init Start**/
 .weui-progress {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .weui-progress-bar {
   background-color: #EBEBEB;
   height: 3px;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
 }
 
 .weui-progress-inner-bar {
@@ -1311,7 +1302,6 @@ a.weui-media-box:active {
 .weui-search-bar {
   position: relative;
   padding: 8px 10px;
-  display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
   background-color: #EFEFF4;
@@ -1354,8 +1344,7 @@ a.weui-media-box:active {
 
 .weui-search-outer {
   position: relative;
-  -ms-flex: auto;
-      flex: auto;
+  flex: auto;
   background-color: #EFEFF4;
 }
 
@@ -1464,9 +1453,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .weui_switch {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   position: relative;
   width: 52px;
   height: 32px;
@@ -1519,7 +1506,6 @@ input[type="search"]::-webkit-search-results-decoration {
 /**_init Start**/
 /**weui-tabbar Start**/
 .weui-tabbar {
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -1542,8 +1528,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .weui-tabbar-item {
   display: block;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   padding: 7px 0 0;
   -webkit-tap-highlight-color: transparent;
 }
@@ -1577,7 +1562,6 @@ input[type="search"]::-webkit-search-results-decoration {
 /**weui-tabbar  End**/
 /**weui-navbar Start**/
 .weui-navbar {
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -1607,8 +1591,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .weui-navbar-item {
   position: relative;
   display: block;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   padding: 13px 0;
   text-align: center;
   font-size: 15px;
@@ -1765,14 +1748,12 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 42px;
   margin-top: 20px;
   font-size: 17px;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .weui-dialog-ft a {
   display: block;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   color: #3CC51F;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
@@ -2024,6 +2005,222 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .weui-loading-leaf-11:before {
   transform: rotate(330deg) translate(7.92px, 0px);
+}
+
+@-webkit-keyframes opacity-60-25-0-12 {
+  0% {
+    opacity: 0.25;
+  }
+  0.01% {
+    opacity: 0.25;
+  }
+  0.02% {
+    opacity: 1;
+  }
+  60.01% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-1-12 {
+  0% {
+    opacity: 0.25;
+  }
+  8.34333% {
+    opacity: 0.25;
+  }
+  8.35333% {
+    opacity: 1;
+  }
+  68.3433% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-2-12 {
+  0% {
+    opacity: 0.25;
+  }
+  16.6767% {
+    opacity: 0.25;
+  }
+  16.6867% {
+    opacity: 1;
+  }
+  76.6767% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-3-12 {
+  0% {
+    opacity: 0.25;
+  }
+  25.01% {
+    opacity: 0.25;
+  }
+  25.02% {
+    opacity: 1;
+  }
+  85.01% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-4-12 {
+  0% {
+    opacity: 0.25;
+  }
+  33.3433% {
+    opacity: 0.25;
+  }
+  33.3533% {
+    opacity: 1;
+  }
+  93.3433% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-5-12 {
+  0% {
+    opacity: 0.270958333333333;
+  }
+  41.6767% {
+    opacity: 0.25;
+  }
+  41.6867% {
+    opacity: 1;
+  }
+  1.67667% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.270958333333333;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-6-12 {
+  0% {
+    opacity: 0.375125;
+  }
+  50.01% {
+    opacity: 0.25;
+  }
+  50.02% {
+    opacity: 1;
+  }
+  10.01% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.375125;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-7-12 {
+  0% {
+    opacity: 0.479291666666667;
+  }
+  58.3433% {
+    opacity: 0.25;
+  }
+  58.3533% {
+    opacity: 1;
+  }
+  18.3433% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.479291666666667;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-8-12 {
+  0% {
+    opacity: 0.583458333333333;
+  }
+  66.6767% {
+    opacity: 0.25;
+  }
+  66.6867% {
+    opacity: 1;
+  }
+  26.6767% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.583458333333333;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-9-12 {
+  0% {
+    opacity: 0.687625;
+  }
+  75.01% {
+    opacity: 0.25;
+  }
+  75.02% {
+    opacity: 1;
+  }
+  35.01% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.687625;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-10-12 {
+  0% {
+    opacity: 0.791791666666667;
+  }
+  83.3433% {
+    opacity: 0.25;
+  }
+  83.3533% {
+    opacity: 1;
+  }
+  43.3433% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.791791666666667;
+  }
+}
+
+@-webkit-keyframes opacity-60-25-11-12 {
+  0% {
+    opacity: 0.895958333333333;
+  }
+  91.6767% {
+    opacity: 0.25;
+  }
+  91.6867% {
+    opacity: 1;
+  }
+  51.6767% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.895958333333333;
+  }
 }
 
 /**weui-toast  End**/

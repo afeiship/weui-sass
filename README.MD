@@ -1,8 +1,6 @@
-#weui-sass
+# weui-sass
 Sass version for weui.
 
-## demo:
-+ https://raw.githubusercontent.com/afeiship/weui-sass/master/test/demo-weui.html
-
 ## resources:
-+ https://github.com/weui/weui
++ https://github.com/Tencent/weui
++ https://weui.io/
