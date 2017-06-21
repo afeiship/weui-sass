@@ -1,12 +1,4 @@
 /**weui-button Start**/
-.weui-btn {
-  &.weui-btn-mini {
-    line-height: $weui-btn-mini-height;
-    font-size: $weui-btn-mini-font-size;
-    padding: 0 .75em;
-    display: inline-block;
-  }
-}
 
 button, input {
   &.weui-btn {
@@ -18,9 +10,20 @@ button, input {
       outline: 0;
     }
   }
-  &.weui-btn-inline,&.weui-btn-mini {
+  &.weui-btn-inline, &.weui-btn-mini {
     width: auto;
   }
+  &.weui-btn-plain-primary, &.weui-btn-plain-default {
+    border-width: 1px;
+    background-color: transparent;
+  }
+}
+
+.weui-btn-mini {
+  display: inline-block;
+  padding: 0 1.32em;
+  line-height: $weui-btn-mini-height;
+  font-size: $weui-btn-mini-font-size;
 }
 
 /*gap between btn*/
@@ -35,16 +38,17 @@ button, input {
 
 .weui-btn-area {
   margin: $weui-cells-margin-top $weui-btn-default-gap .3em;
-  &.weui-btn-area-inline {
-    display: flex;
-    .weui-btn {
-      margin-top: auto;
-      margin-right: $weui-btn-default-gap;
-      width: 100%;
-      flex: 1;
-      &:last-child {
-        margin-right: 0;
-      }
+}
+
+.weui-btn-area-inline {
+  display: flex;
+  .weui-btn {
+    margin-top: auto;
+    margin-right: $weui-btn-default-gap;
+    width: 100%;
+    flex: 1;
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

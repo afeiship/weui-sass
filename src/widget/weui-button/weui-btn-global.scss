@@ -1,4 +1,5 @@
 /**weui-btn-global Start**/
+
 .weui-btn {
   position: relative;
   display: block;
@@ -7,11 +8,12 @@
   padding-left: 14px;
   padding-right: 14px;
   box-sizing: border-box;
-  font-size:$weui-btn-font-size;
+  font-size: $weui-btn-font-size;
   text-align: center;
   text-decoration: none;
   color: $weui-btn-font-color;
-  line-height: $weui-btn-height/$weui-btn-font-size;
+  line-height: unit($weui-btn-height/$weui-btn-font-size);
+
   border-radius: $weui-btn-border-radius;
   @include set-tap-color();
   overflow: hidden;
@@ -28,9 +30,10 @@
     box-sizing: border-box;
     border-radius: $weui-btn-border-radius*2;
   }
-
-  &.weui-btn-inline {
-    display: inline-block;
-  }
 }
+
+.weui-btn-inline {
+  display: inline-block;
+}
+
 /**weui-btn-global  End**/

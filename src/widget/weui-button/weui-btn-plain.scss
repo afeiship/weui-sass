@@ -1,34 +1,32 @@
 /**weui-btn-plain Start**/
-.weui-btn-plain-primary {
-  color: $weui-btn-primary-bg;
-  border: 1px solid $weui-btn-primary-bg;
 
-  &:active {
-    border-color: $weui-btn-primary-active-bg;
+.weui-btn_plain-primary {
+  color: $weui-btn-plain-primary-color;
+  border: 1px solid $weui-btn-plain-primary-border-color;
+  &:not(.weui-btn_plain-disabled):active {
+    color: $weui-btn-plain-primary-active-color;
+    border-color: $weui-btn-plain-primary-active-border-color;
   }
   &:after {
     border-width: 0;
   }
 }
 
-button.weui-btn-plain-primary,
-input.weui-btn-plain-primary {
-  border-width: 1px;
-  background-color: transparent;
-}
-
-.weui-btn-plain-default {
-  color: #5A5A5A;
-  border: 1px solid #5A5A5A;
-
+.weui-btn_plain-default {
+  color: $weui-btn-plain-default-color;
+  border: 1px solid $weui-btn-plain-default-border-color;
+  &:not(.weui-btn_plain-disabled):active {
+    color: $weui-btn-plain-default-active-color;
+    border-color: $weui-btn-plain-default-active-border-color;
+  }
   &:after {
     border-width: 0;
   }
 }
 
-button.weui-btn-plain-default,
-input.weui-btn-plain-default {
-  border-width: 1px;
-  background-color: transparent;
+.weui-btn_plain-disabled {
+  color: rgba(0, 0, 0, .2);
+  border-color: rgba(0, 0, 0, .2);
 }
+
 /**weui-btn-plain  End**/

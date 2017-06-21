@@ -6,7 +6,7 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: $sans-font;
+  font-family: $weui-font-default;
 }
 
 * {
@@ -20,6 +20,7 @@ a img {
 
 a {
   text-decoration: none;
+  @include set-tap-color();
 }
 
 /**reset  End**/
