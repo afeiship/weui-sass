@@ -1,0 +1,101 @@
+/**weui-form-preview Start**/
+
+.weui-form-preview {
+  position: relative;
+  background-color: #FFFFFF;
+  &:before {
+    @include set-top-line($weui-cell-border-color);
+  }
+  &:after {
+    @include set-bottom-line($weui-cell-border-color);
+  }
+}
+
+.weui-form-preview-hd {
+  position: relative;
+  padding: $weui-cell-gap-v $weui-cell-gap-h;
+  text-align: right;
+  line-height: 2.5em;
+  &:after {
+    @include set-bottom-line($weui-cell-border-color);
+    left: $weui-cell-gap-h;
+  }
+  .weui-form-preview-value {
+    font-style: normal;
+    font-size: 1.6em;
+  }
+}
+
+.weui-form-preview-bd {
+  padding: $weui-cell-gap-v $weui-cell-gap-h;
+  font-size: .9em;
+  text-align: right;
+  color: $weui-text-color-gray;
+  line-height: 2;
+}
+
+.weui-form-preview-ft {
+  position: relative;
+  line-height: 50px;
+  display: flex;
+  &:before {
+    @include set-top-line($weui-dialog-line-color);
+  }
+}
+
+.weui-form-preview-item {
+  overflow: hidden;
+}
+
+.weui-form-preview-label {
+  float: left;
+  margin-right: 1em;
+  min-width: 4em;
+  color: $weui-text-color-gray;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.weui-form-preview-value {
+  display: block;
+  overflow: hidden;
+  word-break: normal;
+  word-wrap: break-word;
+}
+
+.weui-form-preview-btn {
+  position: relative;
+  display: block;
+  flex: 1;
+  color: $weui-dialog-link-color;
+  text-align: center;
+  @include set-tap-color;
+  button& {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    line-height: inherit;
+    font-size: inherit;
+  }
+  &:active {
+    background-color: $weui-dialog-link-active-bc;
+  }
+  &:after {
+    @include set-left-line($weui-dialog-line-color);
+  }
+  &:first-child {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.weui-form-preview-btn-default {
+  color: $weui-text-color-gray;
+}
+
+.weui-form-preview-btn-primary {
+  color: #0BB20C;
+}
+
+/**weui-form-preview  End**/

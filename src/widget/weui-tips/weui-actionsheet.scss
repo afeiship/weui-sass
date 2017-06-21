@@ -1,25 +1,43 @@
 /**weui-actionsheet Start**/
-$bg-color:#ECECEC;
 .weui-actionsheet {
   position: fixed;
   left: 0;
   bottom: 0;
   transform: translate(0, 100%);
   backface-visibility: hidden;
-  z-index: 2;
+  z-index: 5000;
   width: 100%;
-  background-color: $page-default-background-color;
+  background-color: $weui-bg-color-default;
   //slide up animation
   transition: transform .3s;
 }
-.weui-actionsheet-menu{
-  background-color: #FFFFFF;
+.weui-actionsheet__title {
+  position: relative;
+  height: 65px;
+  padding: 0 20px;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  background: #FCFCFD;
+  &:before {
+    @include set-bottom-line($weui-cell-border-color);
+  }
+  .weui-actionsheet__title-text {
+    @include ellipsis-ln(2);
+  }
 }
-.weui-actionsheet-action {
+.weui-actionsheet__menu{
+  background-color: #FCFCFD;
+}
+.weui-actionsheet__action {
   margin-top: 6px;
-  background-color: #FFFFFF;
+  background-color: #FCFCFD;;
 }
-.weui-actionsheet-cell {
+.weui-actionsheet__cell {
   position: relative;
   padding: 10px 0;
   text-align: center;
@@ -28,7 +46,7 @@ $bg-color:#ECECEC;
     @include set-top-line($weui-cell-border-color);
   }
   &:active{
-    background-color: $bg-color;
+    background-color: $weui-bg-color-active;
   }
   &:first-child{
     &:before{
@@ -37,8 +55,48 @@ $bg-color:#ECECEC;
   }
 }
 
+
+//android actionSheet
+.weui-skin_android{
+  .weui-actionsheet {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    //padding: 0 40px;
+    width: 274px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    background: transparent;
+    //slide up animation
+    transition: transform .3s;
+  }
+  .weui-actionsheet__action{
+    display: none;
+  }
+  .weui-actionsheet__menu {
+    border-radius: $weui-action-sheet-android-border-radius;
+    box-shadow: 0 6px 30px 0 rgba(0,0,0,.1);
+  }
+  .weui-actionsheet__cell {
+    padding: 13px 24px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: left;
+    &:first-child {
+      border-top-left-radius: $weui-action-sheet-android-border-radius;
+      border-top-right-radius: $weui-action-sheet-android-border-radius;
+    }
+    &:last-child {
+      border-bottom-left-radius: $weui-action-sheet-android-border-radius;
+      border-bottom-right-radius: $weui-action-sheet-android-border-radius;
+    }
+  }
+}
+
 //actionSheet aniamtion
-.weui-actionsheet-toggle{
+.weui-actionsheet_toggle{
   transform: translate(0, 0);
 }
 /**weui-actionsheet  End**/

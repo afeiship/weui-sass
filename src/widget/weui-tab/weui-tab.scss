@@ -1,22 +1,20 @@
 /**weui-tab Start**/
+
 .weui-tab {
   position: relative;
   height: 100%;
 }
 
-.weui-tab-bd {
+.weui-tab__panel {
   box-sizing: border-box;
   height: 100%;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.weui-tab-bd-item {
+.weui-tab__content {
   display: none;
 }
 
-.weui-tab-bd-item-active {
-  display: block;
-}
 /**weui-tab  End**/

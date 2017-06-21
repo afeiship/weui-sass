@@ -1,40 +1,49 @@
 /**weui-msg Start**/
+
 .weui-msg {
   padding-top: $weui-msg-padding-top;
   text-align: center;
+}
 
-  .weui-icon-area {
-    margin-bottom: $weui-msg-icon-gap;
-  }
+.weui-msg__icon-area {
+  margin-bottom: $weui-msg-icon-gap
+}
 
-  .weui-text-area {
-    margin-bottom: $weui-msg-text-gap;
-    padding:0 20px;
-  }
-  .weui-msg-title {
-    margin-bottom: $weui-msg-title-gap;
-    font-weight: 400;
-    font-size: 20px;
-  }
-  .weui-msg-desc {
-    font-size: 14px;
-    color: $global-text-color;
-  }
+.weui-msg__text-area {
+  margin-bottom: $weui-msg-text-gap;
+  padding: 0 20px;
+}
 
-  .weui-opr-area {
-    margin-bottom: $weui-msg-opr-gap;
-  }
+.weui-msg__text-area a {
+  color: $weui-link-color-default;
+}
 
-  .weui-extra-area {
-    margin-bottom: $weui-msg-extra-area-gap;
-    font-size: 14px;
-    color: $global-text-color;
-    a{color: $global-link-color;}
+.weui-msg__title {
+  margin-bottom: $weui-msg-title-gap;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.weui-msg__desc {
+  font-size: 14px;
+  color: $weui-text-color-gray;
+}
+
+.weui-msg__opr-area {
+  margin-bottom: $weui-msg-opr-gap;
+}
+
+.weui-msg__extra-area {
+  margin-bottom: $weui-msg-extra-area-gap;
+  font-size: 14px;
+  color: $weui-text-color-gray;
+  a {
+    color: $weui-link-color-default;
   }
 }
 
 @media screen and (min-height: $weui-msg-extra-area-of-min-height) {
-  .weui-extra-area {
+  .weui-msg__extra-area {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -42,4 +51,5 @@
     text-align: center;
   }
 }
+
 /**weui-msg  End**/

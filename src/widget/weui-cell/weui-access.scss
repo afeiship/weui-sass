@@ -1,0 +1,35 @@
+/**weui-access Start**/
+
+.weui-cell-access {
+  @include set-tap-color;
+  color: inherit;
+  &:active {
+    background-color: #ECECEC;
+  }
+  .weui-cell-ft {
+    padding-right: 13px;
+    position: relative;
+    &:after {
+      content: " ";
+      @include set-arrow(right, #C8C8CD, 2px);
+      position: absolute;
+      top: 50%;
+      margin-top: -4px;
+      right: 2px;
+    }
+  }
+}
+
+.weui-cell-link {
+  color: $weui-link-color-default;
+  font-size: 14px;
+
+  // 由于weui-cell:first-child的:before为隐藏，所以这里要重新显示出来
+  &:first-child {
+    &:before {
+      display: block;
+    }
+  }
+}
+
+/**weui-access  End**/

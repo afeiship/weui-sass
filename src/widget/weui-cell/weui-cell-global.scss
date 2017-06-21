@@ -1,17 +1,11 @@
 /**weui-cell-global Start**/
-.weui-cell {
-  // onepx
-  position: relative;
-  &:before {
-    .setTopLine($weui-cell-border-color);
-    left: $weui-cell-gap-h;
-  }
-  &:first-child {
-    &:before {
-      display: none;
-    }
-  }
-}
+
+/*
+z-index:
+0: .weui-swiped-btn
+1: .weui-cell-swiped .weui-cell-bd
+2: .weui-cells和.weui-cell的1px线
+*/
 
 .weui-cells {
   margin-top: $weui-cells-margin-top;
@@ -24,10 +18,12 @@
   // onepx
   position: relative;
   &:before {
-    .setTopLine($weui-cell-border-color);
+    .setTopLine($weuiCellBorderColor);
+    z-index: 2;
   }
   &:after {
-    .setBottomLine($weui-cell-border-color);
+    .setBottomLine($weuiCellBorderColor);
+    z-index: 2;
   }
 }
 
@@ -36,7 +32,7 @@
   margin-bottom: .3em; // 8px - 行高
   padding-left: $weui-cell-gap-h;
   padding-right: $weui-cell-gap-h;
-  color: $global-text-color;
+  color: $weui-text-color-gray;
   font-size: $weui-cell-tips-font-size;
 
   & + .weui-cells {
@@ -46,7 +42,7 @@
 
 .weui-cells-tips {
   margin-top: .3em; // 8px - 行高
-  color: $global-text-color;
+  color: $weui-text-color-gray;
   padding-left: $weui-cell-gap-h;
   padding-right: $weui-cell-gap-h;
   font-size: $weui-cell-tips-font-size;
@@ -57,14 +53,25 @@
   position: relative; //这个是为了兼容cells容器onepx方案被before挡住而做的
   display: flex;
   align-items: center;
+  &:before {
+    @include set-top-line($weui-cell-border-color);
+    left: $weui-cell-gap-h;
+    z-index: 2;
+  }
+  &:first-child {
+    &:before {
+      display: none;
+    }
+  }
 }
-
+.weui-cell-primary{
+  align-items: flex-start;
+}
+.weui-cell-bd{
+  flex: 1;
+}
 .weui-cell-ft {
   text-align: right;
-  color: $global-text-color;
-}
-
-.weui-cell-primary {
-  flex: 1;
+  color: $weui-text-color-gray;
 }
 /**weui-cell-global  End**/

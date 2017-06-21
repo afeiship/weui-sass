@@ -1,0 +1,84 @@
+/**weui-form-common Start**/
+
+.weui-label {
+  display: block;
+  width: $weui-cell-label-width;
+  @include text-wrap;
+}
+
+.weui-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  height: unit($weui-cell-line-height, em);
+  line-height: $weui-cell-line-height;
+
+  // hides the spin-button
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.weui-textarea {
+  display: block;
+  border: 0;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0;
+}
+
+.weui-textarea-counter {
+  color: $weui-text-color-tips;
+  text-align: right;
+  .weui-cell_warn & {
+    color: $weui-text-color-warn;
+  }
+}
+
+.weui-toptips {
+  display: none;
+  position: fixed;
+  transform: translateZ(0);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+  z-index: 5000;
+  @include text-wrap;
+}
+
+.weui-toptips_warn {
+  background-color: $weui-color-warn;
+}
+
+.weui-cells_form {
+  .weui-cell__ft {
+    font-size: 0;
+  }
+  .weui-icon-warn {
+    display: none;
+  }
+  input, textarea, label[for] {
+    @include set-tap-color;
+  }
+}
+
+.weui-cell_warn {
+  color: $weui-text-color-warn;
+  .weui-icon-warn {
+    display: inline-block;
+  }
+}
+
+/**weui-form-common  End**/

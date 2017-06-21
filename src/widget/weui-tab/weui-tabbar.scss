@@ -2,47 +2,55 @@
 .weui-tabbar {
   display: flex;
   position: absolute;
+  z-index: 500;
   bottom: 0;
   width: 100%;
-  background-color: #f7f7fa;
+  background-color: #F7F7FA;
 
   &:before {
-    @include set-top-line(#979797);
+    @include set-top-line(#C0BFC4)
   }
 }
 
-.weui-tabbar-item {
+.weui-tabbar__item {
   display: block;
   flex: 1;
-  padding: 7px 0 0;
-  -webkit-tap-highlight-color: transparent;
+  padding: 5px 0 0;
+  font-size: 0;
+  color: $weui-text-color-gray;
+  text-align: center;
+  .setTapColor();
 
-  &.weui-bar-item-on {
-    .weui-tabbar-label {
+  &.weui-bar__item_on {
+    .weui-tabbar__icon,
+    .weui-tabbar__icon > i,
+    .weui-tabbar__label {
       color: #09BB07;
     }
   }
 }
 
-.weui-tabbar-icon {
-  margin: 0 auto;
-  width: 24px;
-  height: 24px;
+.weui-tabbar__icon {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+
+  i&,
+  > i {
+    font-size: 24px;
+    color: $weui-text-color-gray;
+  }
 
   img {
-    display: block;
     width: 100%;
     height: 100%;
   }
-
-  & + .weui-tabbar-label {
-    margin-top: 5px;
-  }
 }
 
-.weui-tabbar-label {
+.weui-tabbar__label {
   text-align: center;
-  color: $global-text-color;
-  font-size: 12px;
+  color: $weui-text-color-gray;
+  font-size: 10px;
+  line-height: 1.8;
 }
 /**weui-tabbar  End**/

@@ -1,0 +1,13 @@
+/**weui-check-common Start**/
+.weui-check-label {
+  @include set-tap-color();
+  &:active {
+    background-color: #ECECEC;
+  }
+}
+
+.weui-check {
+  position: absolute;
+  left: -9999em;
+}
+/**weui-check-common  End**/

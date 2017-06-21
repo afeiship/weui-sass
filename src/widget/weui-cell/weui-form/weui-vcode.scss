@@ -1,0 +1,35 @@
+/**weui-vcode Start**/
+.weui-cell_vcode {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.weui-vcode-img{
+  margin-left: 5px;
+  height: $weui-cell-height;
+  vertical-align: middle;
+}
+
+.weui-vcode-btn {
+  display: inline-block;
+  height: $weui-cell-height;
+  margin-left: 5px;
+  padding: 0 0.6em 0 0.7em;
+  border-left: 1px solid $weui-line-color-light;
+  line-height: $weui-cell-height;
+  vertical-align: middle;
+  font-size: $weui-cell-font-size;
+  color: $weui-dialog-link-color;
+  button&{
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    outline: 0;
+  }
+  &:active {
+    //todo: test sass
+    color: desaturate($weui-dialog-link-color, 30%);
+  }
+}
+/**weui-vcode  End**/
