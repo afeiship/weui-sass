@@ -1,7 +1,7 @@
 /**weui-checkbox Start**/
 
 .weui-cells-checkbox {
-  .weui-cell-hd {
+  .weui-cell__hd {
     padding-right: $weui-cell-inner-gap-h;
   }
   .weui-icon-checked {
@@ -17,7 +17,7 @@
 // method2 accessbility
 .weui-check {
   // checkbox
-  .weui-cells-checkbox & {
+  .weui-cells_checkbox & {
     &:checked {
       & + .weui-icon-checked {
         &:before {

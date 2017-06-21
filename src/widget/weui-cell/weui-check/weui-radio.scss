@@ -1,14 +1,14 @@
 /**weui-radio Start**/
 // method2 accessbility
-.weui-cells-radio {
-  .weui-cell-ft {
+.weui-cells_radio{
+  .weui-cell__ft {
     padding-left: $weui-cell-inner-gap-h;
   }
 }
 
 .weui-check {
   // radio
-  .weui-cells-radio & {
+  .weui-cells_radio & {
     &:checked {
       & + .weui-icon-checked {
         &:before {

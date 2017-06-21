@@ -8,7 +8,7 @@
   appearance: none;
 }
 .weui-switch,
-.weui-switch-cp-box{
+.weui-switch-cp__box{
   position: relative;
   width: 52px;
   height: $weui-switch-height;
@@ -44,7 +44,7 @@
   }
 }
 .weui-switch:checked,
-.weui-switch-cp-input:checked ~ .weui-switch-cp-box{
+.weui-switch-cp__input:checked ~ .weui-switch-cp__box{
   border-color: #04BE02;
   background-color: #04BE02;
   &:before {
@@ -56,11 +56,11 @@
 }
 
 // 兼容IE Edge的版本
-.weui-switch-cp-input{
+.weui-switch-cp__input{
   position: absolute;
   left: -9999px;
 }
-.weui-switch-cp-box{
+.weui-switch-cp__box{
   display: block;
 }
 /**weui-switch  End**/

@@ -63,18 +63,18 @@
 }
 
 .weui-cells_form {
-  .weui-cell__ft {
-    font-size: 0;
+  .weui-cell__ft{
+    font-size:0;
   }
-  .weui-icon-warn {
-    display: none;
+  .weui-icon-warn{
+    display:none;
   }
   input, textarea, label[for] {
     @include set-tap-color;
   }
 }
 
-.weui-cell_warn {
+.weui-cell_warn{
   color: $weui-text-color-warn;
   .weui-icon-warn {
     display: inline-block;

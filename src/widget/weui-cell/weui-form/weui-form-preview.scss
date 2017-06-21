@@ -11,7 +11,7 @@
   }
 }
 
-.weui-form-preview-hd {
+.weui-form-preview__hd{
   position: relative;
   padding: $weui-cell-gap-v $weui-cell-gap-h;
   text-align: right;
@@ -20,13 +20,13 @@
     @include set-bottom-line($weui-cell-border-color);
     left: $weui-cell-gap-h;
   }
-  .weui-form-preview-value {
+  .weui-form-preview__value{
     font-style: normal;
     font-size: 1.6em;
   }
 }
 
-.weui-form-preview-bd {
+.weui-form-preview__bd{
   padding: $weui-cell-gap-v $weui-cell-gap-h;
   font-size: .9em;
   text-align: right;
@@ -34,7 +34,7 @@
   line-height: 2;
 }
 
-.weui-form-preview-ft {
+.weui-form-preview__ft{
   position: relative;
   line-height: 50px;
   display: flex;
@@ -43,11 +43,11 @@
   }
 }
 
-.weui-form-preview-item {
+.weui-form-preview__item{
   overflow: hidden;
 }
 
-.weui-form-preview-label {
+.weui-form-preview__label{
   float: left;
   margin-right: 1em;
   min-width: 4em;
@@ -56,14 +56,14 @@
   text-align-last: justify;
 }
 
-.weui-form-preview-value {
+.weui-form-preview__value{
   display: block;
   overflow: hidden;
   word-break: normal;
   word-wrap: break-word;
 }
 
-.weui-form-preview-btn {
+.weui-form-preview__btn {
   position: relative;
   display: block;
   flex: 1;
@@ -90,11 +90,11 @@
   }
 }
 
-.weui-form-preview-btn-default {
+.weui-form-preview__btn_default {
   color: $weui-text-color-gray;
 }
 
-.weui-form-preview-btn-primary {
+.weui-form-preview__btn_primary {
   color: #0BB20C;
 }
 

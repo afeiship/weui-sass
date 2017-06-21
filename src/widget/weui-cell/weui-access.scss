@@ -1,12 +1,12 @@
 /**weui-access Start**/
 
-.weui-cell-access {
+.weui-cell_access {
   @include set-tap-color;
   color: inherit;
   &:active {
     background-color: #ECECEC;
   }
-  .weui-cell-ft {
+  .weui-cell__ft {
     padding-right: 13px;
     position: relative;
     &:after {
@@ -20,7 +20,7 @@
   }
 }
 
-.weui-cell-link {
+.weui-cell_link{
   color: $weui-link-color-default;
   font-size: 14px;
 

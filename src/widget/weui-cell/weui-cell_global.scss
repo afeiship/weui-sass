@@ -27,7 +27,7 @@ z-index:
   }
 }
 
-.weui-cells-title {
+.weui-cells__title {
   margin-top: .77em; // 15px - 行高
   margin-bottom: .3em; // 8px - 行高
   padding-left: $weui-cell-gap-h;
@@ -40,7 +40,7 @@ z-index:
   }
 }
 
-.weui-cells-tips {
+.weui-cells__tips {
   margin-top: .3em; // 8px - 行高
   color: $weui-text-color-gray;
   padding-left: $weui-cell-gap-h;
@@ -64,13 +64,13 @@ z-index:
     }
   }
 }
-.weui-cell-primary{
+.weui-cell_primary{
   align-items: flex-start;
 }
-.weui-cell-bd{
+.weui-cell__bd{
   flex: 1;
 }
-.weui-cell-ft {
+.weui-cell__ft {
   text-align: right;
   color: $weui-text-color-gray;
 }

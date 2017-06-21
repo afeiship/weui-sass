@@ -1,14 +1,14 @@
 /**weui-cell-swiped Start**/
 
-.weui-cell-swiped {
+.weui-cell_swiped {
   display: block;
   padding: 0;
-  > .weui-cell-bd {
+  > .weui-cell__bd {
     position: relative;
     z-index: 1;
     background-color: #FFFFFF;
   }
-  > .weui-cell-ft {
+  > .weui-cell__ft {
     position: absolute;
     right: 0;
     top: 0;
@@ -23,10 +23,10 @@
   line-height: $weui-cell-line-height;
   color: inherit;
 }
-.weui-swiped-btn-default {
+.weui-swiped-btn_default {
   background-color: #C7C7CC;
 }
-.weui-swiped-btn-warn {
+.weui-swiped-btn_warn {
   background-color: #FF3B30;
 }
 /**weui-cell-swiped  End**/
