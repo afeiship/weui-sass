@@ -14,7 +14,7 @@
   background-color: transparent;
   font-size: inherit;
   color: inherit;
-  height: unit($weui-cell-line-height, em);
+  height:"#{$weui-cell-line-height}em";
   line-height: $weui-cell-line-height;
 
   // hides the spin-button

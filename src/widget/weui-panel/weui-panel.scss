@@ -13,7 +13,7 @@
     @include set-top-line($weui-line-color-light);
   }
   &:after {
-    .setBottomLine($weui-line-color-light);
+    @include set-bottom-line($weui-line-color-light);
   }
 }
 
@@ -23,7 +23,7 @@
   font-size: 13px;
   position: relative;
   &:after {
-    .setBottomLine($weui-line-color-light);
+    @include set-bottom-line($weui-line-color-light);
     left: 15px;
   }
 }

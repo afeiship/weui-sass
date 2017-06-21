@@ -27,7 +27,7 @@
   position: relative;
   font-size: 14px;
   &:before{
-    .setLeftLine();
+    @include set-left-line();
     left: -.65em;
     top: .36em;
     bottom: .36em;

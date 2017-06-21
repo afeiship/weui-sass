@@ -12,7 +12,7 @@
   text-align: center;
   text-decoration: none;
   color: $weui-btn-font-color;
-  line-height: unit($weui-btn-height/$weui-btn-font-size);
+  line-height: strip-units($weui-btn-height/$weui-btn-font-size);
 
   border-radius: $weui-btn-border-radius;
   @include set-tap-color();

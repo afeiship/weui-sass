@@ -10,8 +10,8 @@ $weui-cell-font-size:17px;
 $weui-cell-tips-font-size:14px;
 $weui-cell-label-width:105px;
 
-$weui-cell-line-height: unit(($weui-cell-height - 2 * $weui-cell-gap-v) / $weui-cell-font-size); // 高度减去上下padding的行高
-$weui-cells-margin-top:unit(20 / $weui-cell-font-size, em);
+$weui-cell-line-height: strip-units(($weui-cell-height - 2 * $weui-cell-gap-v) / $weui-cell-font-size); // 高度减去上下padding的行高
+$weui-cells-margin-top:"#{20 / strip-units($weui-cell-font-size)}em";
 
 // weui switch
 $weui-switch-height: 32px;

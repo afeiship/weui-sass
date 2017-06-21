@@ -20,7 +20,9 @@
   vertical-align: middle;
   font-size: $weui-cell-font-size;
   color: $weui-dialog-link-color;
-  button&{
+
+  //todo: has bug?
+  &button{
     background-color: transparent;
     border-top: 0;
     border-right: 0;

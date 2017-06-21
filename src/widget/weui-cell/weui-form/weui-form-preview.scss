@@ -70,7 +70,9 @@
   color: $weui-dialog-link-color;
   text-align: center;
   @include set-tap-color;
-  button& {
+
+  //todo: maybe has bug:
+  &button {
     background-color: transparent;
     border: 0;
     outline: 0;

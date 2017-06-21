@@ -1,0 +1,18 @@
+/*strip-units Start*/
+@function strip-units($value){
+  @if type-of($value) == "number" {
+    @if (unitless($value)) {
+      @return $value;
+    } @else if unit($value) == "em"{
+      @return $value / 1em;
+    } @else if unit($value) == "px" {
+      @return $value / 1px;
+    } @else if unit($value) == "pt" {
+      @return $value / 1pt;
+    }
+  } @else {
+    @warn "Not a number value: #{$value}";
+    @return $value;
+  }
+}
+/*strip-units End*/

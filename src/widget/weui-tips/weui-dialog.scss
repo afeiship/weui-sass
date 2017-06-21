@@ -49,7 +49,7 @@
   flex: 1;
   color: $weui-dialog-link-color;
   text-decoration: none;
-  .setTapColor();
+  @include set-tap-color;
   &:active {
     background-color: $weui-dialog-link-active-bc;
   }

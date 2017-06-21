@@ -18,11 +18,11 @@ z-index:
   // onepx
   position: relative;
   &:before {
-    .setTopLine($weuiCellBorderColor);
+    @include set-top-line($weui-cell-border-color);
     z-index: 2;
   }
   &:after {
-    .setBottomLine($weuiCellBorderColor);
+    @include set-bottom-line($weui-cell-border-color);
     z-index: 2;
   }
 }

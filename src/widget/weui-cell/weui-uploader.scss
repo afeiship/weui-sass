@@ -95,6 +95,6 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  .setTapColor();
+  @include set-tap-color;
 }
 /**weui-uploader  End**/
