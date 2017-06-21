@@ -8,7 +8,6 @@
 /**set-one-px  End**/
 /**text Start**/
 /**text  End**/
-/**_init Start**/
 /**global Start**/
 /**global  End**/
 /**monokai Start**/
@@ -23,7 +22,6 @@
 /**weui-msg  End**/
 /**weui-progress Start**/
 /**weui-progress  End**/
-/**_init  End**/
 /**reset Start**/
 html {
   -ms-text-size-adjust: 100%;
@@ -49,7 +47,6 @@ a {
 }
 
 /**reset  End**/
-/**_init Start**/
 /**weui-font Start**/
 @font-face {
   font-weight: normal;
@@ -251,7 +248,6 @@ a {
 }
 
 /**weui-icon-font  End**/
-/**_init  End**/
 /**_init Start**/
 /**_init Start**/
 /**weui-button Start**/

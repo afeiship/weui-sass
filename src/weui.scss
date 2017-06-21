@@ -1,9 +1,10 @@
 /**weui Start**/
 @import "base/mixin/*";
-@import "base/variable/init";
+@import "base/variable/*";
 @import "base/reset";
 
-@import "icon/init";
+@import "icon/weui-font";
+@import "icon/weui-icon-font";
 
 @import "widget/init";
 /**weui  End**/
