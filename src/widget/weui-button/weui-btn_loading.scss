@@ -3,13 +3,13 @@
   .weui-loading {
     margin: -.2em .34em 0 0;
   }
-  &.weui-btn-primary, &.weui-btn-warn {
+  &.weui-btn_primary, &.weui-btn_warn {
     color: $weui-btn-active-font-color;
   }
-  &.weui-btn-primary {
+  &.weui-btn_primary {
     background-color: $weui-btn-primary-active-bg;
   }
-  &.weui-btn-warn {
+  &.weui-btn_warn {
     background-color: $weui-btn-warn-active-bg;
   }
 }
