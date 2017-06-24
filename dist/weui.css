@@ -270,6 +270,162 @@ a {
 
 /**weui-icon-font  End**/
 /**weui-button Start**/
+/**weui-btn-global Start**/
+.weui-btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 2.55556;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+}
+
+.weui-btn:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.weui-btn-inline {
+  display: inline-block;
+}
+
+/**weui-btn-global  End**/
+/**weui-btn-default Start**/
+.weui-btn_default {
+  color: #000000;
+  background-color: #f8f8f8;
+}
+
+.weui-btn_default:not(.weui-btn-disabled):visited {
+  color: #000000;
+}
+
+.weui-btn_default:not(.weui-btn-disabled):active {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #dedede;
+}
+
+/**weui-btn-default  End**/
+/**weui-btn-primary Start**/
+.weui-btn-primary {
+  background-color: #1aad19;
+}
+
+.weui-btn-primary:not(.weui-btn-disabled):visited {
+  color: #ffffff;
+}
+
+.weui-btn-primary:not(.weui-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #179b16;
+}
+
+/**weui-btn-primary  End**/
+/**weui-btn-warn Start**/
+.weui-btn_warn {
+  background-color: #e64340;
+}
+
+.weui-btn_warn:not(.weui-btn-disabled):visited {
+  color: #ffffff;
+}
+
+.weui-btn_warn:not(.weui-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #ce3c39;
+}
+
+/**weui-btn-warn  End**/
+/**weui-btn-disabled Start**/
+.weui-btn_disabled {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.weui-btn_disabled.weui-btn_default {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f7f7f7;
+}
+
+.weui-btn_disabled.weui-btn_primary {
+  background-color: #9ed99d;
+}
+
+.weui-btn_disabled.weui-btn_warn {
+  background-color: #ec8b89;
+}
+
+/**weui-btn-disabled  End**/
+/**weui-btn-loading Start**/
+.weui-btn-loading .weui-loading {
+  margin: -.2em .34em 0 0;
+}
+
+.weui-btn-loading.weui-btn-primary, .weui-btn-loading.weui-btn-warn {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.weui-btn-loading.weui-btn-primary {
+  background-color: #179b16;
+}
+
+.weui-btn-loading.weui-btn-warn {
+  background-color: #ce3c39;
+}
+
+/**weui-btn-loading  End**/
+/**weui-btn-plain Start**/
+.weui-btn_plain-primary {
+  color: #1aad19;
+  border: 1px solid #1aad19;
+}
+
+.weui-btn_plain-primary:not(.weui-btn_plain-disabled):active {
+  color: rgba(26, 173, 25, 0.6);
+  border-color: rgba(26, 173, 25, 0.6);
+}
+
+.weui-btn_plain-primary:after {
+  border-width: 0;
+}
+
+.weui-btn_plain-default {
+  color: #353535;
+  border: 1px solid #353535;
+}
+
+.weui-btn_plain-default:not(.weui-btn_plain-disabled):active {
+  color: rgba(53, 53, 53, 0.6);
+  border-color: rgba(53, 53, 53, 0.6);
+}
+
+.weui-btn_plain-default:after {
+  border-width: 0;
+}
+
+.weui-btn_plain-disabled {
+  color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/**weui-btn-plain  End**/
 button.weui-btn, input.weui-btn {
   width: 100%;
   border-width: 0;

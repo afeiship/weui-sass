@@ -1,5 +1,13 @@
 /**weui-button Start**/
 
+@import "weui-btn_global";
+@import "weui-btn_default";
+@import "weui-btn_primary";
+@import "weui-btn_warn";
+@import "weui-btn_disabled";
+@import "weui-btn_loading";
+@import "weui-btn_plain";
+
 button, input {
   &.weui-btn {
     width: 100%;
