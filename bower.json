@@ -1,7 +1,7 @@
 {
   "name": "weui-sass",
   "description": "Sass version for weui.",
-  "main": "dist/weui-sass.js",
+  "main": "dist/weui-sass.css",
   "authors": [
     "afei"
   ],

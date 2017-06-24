@@ -1,12 +1,13 @@
 {
   "name": "weui-sass",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sass version for weui.",
   "homepage": "https://github.com/afeiship/weui-sass",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
   },
+  "main": "dist/weui.css",
   "scripts": {
     "build": "gulp"
   },
