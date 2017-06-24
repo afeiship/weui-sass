@@ -1,10 +1,10 @@
 /**weui-btn-warn Start**/
 .weui-btn_warn {
   background-color: $weui-btn-warn-bg;
-  &:not(.weui-btn-disabled):visited {
+  &:not(.weui-btn_disabled):visited {
     color: $weui-btn-font-color;
   }
-  &:not(.weui-btn-disabled):active {
+  &:not(.weui-btn_disabled):active {
     color: $weui-btn-active-font-color;
     background-color: $weui-btn-warn-active-bg;
   }

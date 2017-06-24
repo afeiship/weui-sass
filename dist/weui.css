@@ -303,7 +303,7 @@ a {
   border-radius: 10px;
 }
 
-.weui-btn-inline {
+.weui-btn_inline {
   display: inline-block;
 }
 
@@ -314,11 +314,11 @@ a {
   background-color: #f8f8f8;
 }
 
-.weui-btn_default:not(.weui-btn-disabled):visited {
+.weui-btn_default:not(.weui-btn_disabled):visited {
   color: #000000;
 }
 
-.weui-btn_default:not(.weui-btn-disabled):active {
+.weui-btn_default:not(.weui-btn_disabled):active {
   color: rgba(0, 0, 0, 0.6);
   background-color: #dedede;
 }
@@ -329,11 +329,11 @@ a {
   background-color: #1aad19;
 }
 
-.weui-btn_primary:not(.weui-btn-disabled):visited {
+.weui-btn_primary:not(.weui-btn_disabled):visited {
   color: #ffffff;
 }
 
-.weui-btn_primary:not(.weui-btn-disabled):active {
+.weui-btn_primary:not(.weui-btn_disabled):active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #179b16;
 }
@@ -344,11 +344,11 @@ a {
   background-color: #e64340;
 }
 
-.weui-btn_warn:not(.weui-btn-disabled):visited {
+.weui-btn_warn:not(.weui-btn_disabled):visited {
   color: #ffffff;
 }
 
-.weui-btn_warn:not(.weui-btn-disabled):active {
+.weui-btn_warn:not(.weui-btn_disabled):active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #ce3c39;
 }
@@ -374,19 +374,19 @@ a {
 
 /**weui-btn-disabled  End**/
 /**weui-btn-loading Start**/
-.weui-btn-loading .weui-loading {
+.weui-btn_loading .weui-loading {
   margin: -.2em .34em 0 0;
 }
 
-.weui-btn-loading.weui-btn_primary, .weui-btn-loading.weui-btn_warn {
+.weui-btn_loading.weui-btn_primary, .weui-btn_loading.weui-btn_warn {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.weui-btn-loading.weui-btn_primary {
+.weui-btn_loading.weui-btn_primary {
   background-color: #179b16;
 }
 
-.weui-btn-loading.weui-btn_warn {
+.weui-btn_loading.weui-btn_warn {
   background-color: #ce3c39;
 }
 
